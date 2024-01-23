@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav id="nav">
+
+
+        <div class="container">
+
+            <div class="navContent d-flex justify-content-between align-items-center">
+                <div class="logo d-flex">
+                    <img class="" src="./imgs/asset 0.png" alt="" height="38px">
+                    <div class="ms-3">
+                        <h1 class="mb-1">Weather</h1>
+                        <span>tagline goes here </span>
+                    </div>
+                </div>
+
+                <ul class="d-flex hideUl">
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> News </a></li>
+                    <li><a href="#"> Live Cameras</a></li>
+                    <li><a href="#"> Photos </a></li>
+                    <li><a href="#"> Contact </a></li>
+                </ul>
+
+                <div class=" navbar navStyle  fixed-right bg-transparent  d-none">
+                    <button class="navbar-toggler btnColor mt-0 ms-auto bg-body-tertiary mt-4" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Weather App</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body ">
+
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Live Cameras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Photos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+
+            <form class="searchContent d-flex position-relative">
+                <input id="search" class="w-100" type="search" placeholder="Find your location...">
+                <button type="button" id="btn" class="my-btn position-absolute"> Find</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="cards ">
+        <div class="container position-relative">
+
+            <div class="row items ">
+
+                <div class=" Firstitem col-md-12 col-lg-4 text-white px-0">
+                    <div class="headFirstItem d-flex justify-content-between align-items-center">
+                        <p id="wDaysf">Sunday</p>
+                        <p id="mDaysf">31December</p>
+                    </div>
+                    <div class="bodyFirstItem">
+                        <p id="city">Alexandria</p>
+                        <div class="d-flex degree justify-content-evenly align-items-center flex-md-wrap">
+                            <div id="cityDegreeF" class="num"> 14 </div>
+
+                            <img id="degreeImgF" src="./imgs/asset 5.png" alt="degreeIcon" height="64px" width="64px">
+                        </div>
+                        <div id="ConditionsF" class="Conditions"> Partly cloudy</div>
+                        <div>
+                            <img src="./imgs/asset 2.png" alt=""></span> <span id="humidity">20</span> <span>
+                                <span><img src="./imgs/asset 3.png" alt=""></span> <span id="wind">18km</span>
+                                <span><img src="./imgs/asset 4.png" alt=""></span> <span id="windD"> East</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" secondItem col-md-12 col-lg-4  text-white px-0 text-center">
+                    <div class="headSecondItem d-flex justify-content-between align-items-center">
+                        <p id="wDayS" class="w-100">Monday</p>
+                    </div>
+                    <div class="bodySecondItem">
+                        <div class="degree">
+                            <img id="degreeImgS" class="mb-4" src="./imgs/asset 5.png" alt="">
+
+                            <div id="degreeS" class="num">12 </div>
+
+                            <div id="smallDegreeS" class="small">12</div>
+                        </div>
+                        <div id="ConditionsS" class="Conditions"> </div>
+                    </div>
+                </div>
+
+                <div class=" thirdItem col-md-12 col-lg-4 text-white px-0 text-center">
+                    <div class="headSecondItem d-flex justify-content-between align-items-center">
+                        <p id="wDayT" class="w-100">Monday</p>
+                    </div>
+                    <div class="bodySecondItem">
+                        <div class="degree">
+                            <img id="degreeImgT" class="mb-4" src="./imgs/asset 5.png" alt="">
+                            <div id="degreeT" class="num"> 14 <sup>o</sup>C </div>
+                            <div id="smallDegreeT" class="small"> <sup>o</sup> </div>
+                        </div>
+                        <div id="ConditionsT" class="Conditions"> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class=" container">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center col-md-12">
+                    <div class="row w-100">
+                        <div class="col-md-8 ">
+                            <form class="subscribe  position-relative mb-5">
+                                <input id="subscribeInput" class="w-100" type="search"
+                                    placeholder="Enter your email to subscribe...">
+                                <button class=" my-btn position-absolute"> subscribe</button>
+                            </form>
+                        </div>
+
+                        <div class="col-md-3 col-md-offset-1">
+                            <ul class="d-flex align-items-center mb-0">
+                                <li><a href="#"> <i class="fa-brands fa-facebook-f"></i> </a></li>
+                                <li><a href="#"> <i class="fa-brands fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa-brands fa-google"></i></a></li>
+                                <li><a href="#"> <i class="fa-brands fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="text-white opacity-75"> Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./function.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
